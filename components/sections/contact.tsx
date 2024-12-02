@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 const formVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -50,72 +52,44 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-secondary/20">
-      <div className="container px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl font-bold font-heading text-center mb-12"
+<section id="contact" className="py-20 bg-secondary/20">
+  <div className="container px-4">
+    <div className="flex flex-col items-center">
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="text-3xl font-bold font-heading text-center mb-6"
+      >
+        Get in Touch
+      </motion.h2>
+      <div className="flex space-x-6 mt-3">
+        <Link
+          href="https://github.com/aadityapatil350"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-primary transition-colors"
         >
-          Get in Touch
-        </motion.h2>
-        <motion.div
-          variants={formVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="max-w-md mx-auto"
+          <Github className="h-5 w-5" />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/aditya-patil-206b321a4/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-primary transition-colors"
         >
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <motion.div variants={inputVariants}>
-              <Input
-                placeholder="Your Name"
-                required
-                disabled={isSubmitting}
-              />
-            </motion.div>
-            <motion.div variants={inputVariants}>
-              <Input
-                type="email"
-                placeholder="Your Email"
-                required
-                disabled={isSubmitting}
-              />
-            </motion.div>
-            <motion.div variants={inputVariants}>
-              <Input
-                placeholder="Subject"
-                required
-                disabled={isSubmitting}
-              />
-            </motion.div>
-            <motion.div variants={inputVariants}>
-              <Textarea
-                placeholder="Your Message"
-                required
-                disabled={isSubmitting}
-                className="min-h-[150px]"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-            >
-              <Button
-                type="submit"
-                className="w-full"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </Button>
-            </motion.div>
-          </form>
-        </motion.div>
+          <Linkedin className="h-5 w-5" />
+        </Link>
+        <Link
+          href="mailto:aadityapatil350@gmail.com"
+          className="text-muted-foreground hover:text-primary transition-colors"
+        >
+          <Mail className="h-5 w-5" />
+        </Link>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
   );
 }

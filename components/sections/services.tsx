@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, Layout, Server, Database, Cloud, Lock } from 'lucide-react';
+import { Code2, Layout, Server, Database, Cloud, Lock, Globe, Rocket, ChartBar } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
@@ -28,12 +28,27 @@ const services = [
   {
     icon: Cloud,
     title: 'Cloud Solutions',
-    description: 'Deploying and managing applications on cloud platforms like AWS, Google Cloud, and Azure.',
+    description: 'Deploying and managing applications on cloud platforms like AWS, Google Cloud, and Digital Ocean.',
   },
   {
     icon: Lock,
     title: 'Security Implementation',
     description: 'Implementing robust security measures and best practices to protect your applications.',
+  },
+  {
+    icon: Globe,
+    title: 'Web Development',
+    description: 'Crafting scalable and performant web applications tailored to your business needs.',
+  },
+  {
+    icon: Rocket,
+    title: 'Automation Solutions',
+    description: 'Designing workflows and scripts to automate repetitive tasks and optimize productivity.',
+  },
+  {
+    icon: ChartBar,
+    title: 'Data Analytics',
+    description: 'Analyzing and visualizing data to provide actionable insights for decision-making.',
   },
 ];
 

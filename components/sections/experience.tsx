@@ -6,35 +6,44 @@ import { motion } from 'framer-motion';
 const experiences = [
   {
     title: 'Senior Full Stack Developer',
-    company: 'Tech Solutions Inc.',
-    period: '2022 - Present',
+    company: 'Renewalytics',
+    period: '2024 - Present',
     achievements: [
-      'Led a team of 5 developers in building a scalable e-commerce platform',
-      'Improved application performance by 40% through optimization',
-      'Implemented CI/CD pipeline reducing deployment time by 60%',
+      'Built the core infrastructure of a startup specializing in forecasting solutions.',
+      'Developed the main website and dashboard using Next.js, integrated with both MySQL and MongoDB databases via Prisma.',
+      'Implemented full custom authentication with role-based access control (RBAC).',
+      'Set up and managed staging and production environments, including CI/CD pipelines and deployment on DigitalOcean.',
+      'Handled server maintenance and ensured system uptime and scalability.',
+      'Optimized database queries and front-end performance to improve user experience and data retrieval speed.',
     ],
   },
   {
-    title: 'Full Stack Developer',
-    company: 'Digital Innovations Ltd.',
-    period: '2020 - 2022',
+    title: 'Software Engineer',
+    company: 'Climate Connect Digital',
+    period: '2021 - 2024',
     achievements: [
-      'Developed and maintained multiple client projects using React and Node.js',
-      'Integrated payment gateways and third-party APIs',
-      'Mentored junior developers and conducted code reviews',
+      'Developed and maintained web applications using PHP Laravel framework with robust front-end implementations using JavaScript, Bootstrap, HTML, and CSS.',
+      'Containerized applications using Docker to enhance scalability and streamline development workflows.',
+      'Integrated various APIs and payment gateways to expand application functionality.',
+      'Collaborated in an Agile environment with cross-functional teams, including product managers and stakeholders, to deliver software solutions sprint-wise.',
+      'Mentored junior developers, conducted code reviews, and enforced best practices in software development.',
     ],
   },
   {
-    title: 'Junior Developer',
-    company: 'StartUp Hub',
-    period: '2019 - 2020',
+    title: 'Software Engineer Intern',
+    company: 'Climate Connect Digital',
+    period: '2020 - 2021',
     achievements: [
-      'Built responsive web applications using modern JavaScript frameworks',
-      'Collaborated with UI/UX designers to implement pixel-perfect designs',
-      'Participated in daily stand-ups and sprint planning meetings',
+      'Assisted in the development and maintenance of web applications using PHP Laravel framework.',
+      'Worked on front-end development using HTML, CSS, JavaScript, and Bootstrap to create responsive user interfaces.',
+      'Collaborated with senior developers to troubleshoot and debug code, enhancing problem-solving skills.',
+      'Gained experience in Git for version control and Docker for application containerization.',
+      'Demonstrated a strong work ethic and eagerness to learn, contributing to team success.',
+      'Actively participated in sprint planning, daily stand-ups, and retrospective meetings in an Agile environment.',
     ],
   },
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },

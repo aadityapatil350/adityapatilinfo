@@ -8,11 +8,9 @@ const skills = [
   { name: 'JavaScript/TypeScript', level: 90 },
   { name: 'React.js', level: 85 },
   { name: 'Node.js', level: 80 },
-  { name: 'Python', level: 75 },
+  { name: 'Php', level: 75 },
   { name: 'MongoDB', level: 85 },
-  { name: 'PostgreSQL', level: 80 },
-  { name: 'Docker', level: 70 },
-  { name: 'AWS', level: 65 },
+  { name: 'SQL', level: 80 },
 ];
 
 export function Skills() {

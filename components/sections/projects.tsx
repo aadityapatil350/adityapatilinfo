@@ -8,26 +8,47 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform with real-time inventory management.',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example',
+    title: 'Imaginate',
+    description: 'An AI-powered image generator SaaS offering a variety of advanced image generation features, ideal for creative professionals and businesses.',
+    technologies: ['Next.js', 'Node.js', 'MongoDB', 'OpenAI API', 'Stripe'],
+    liveUrl: 'https://imaginate.pro',
+    githubUrl: 'https://github.com/aadityapatil350/imaginate',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates.',
-    technologies: ['React', 'Firebase', 'Tailwind CSS'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example',
+    title: 'Quick-News',
+    description: 'A clone of the Inshorts application that provides bite-sized news updates in a visually appealing format.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+    liveUrl: '', // Not hosted
+    githubUrl: 'https://github.com/aadityapatil350/Quick-News',
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media management and monitoring.',
-    technologies: ['Vue.js', 'Express', 'PostgreSQL'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example',
+    title: 'Water Packaging Template',
+    description: 'A template designed for a local water packaging business to showcase their products and services.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://water-packaging-demo.netlify.app/',
+    githubUrl: '', // Not available on GitHub
   },
+  {
+    title: '10Sports Business Website',
+    description: 'A website for a local sports club business featuring booking and service details.',
+    technologies: ['React', 'Tailwind CSS', 'Netlify'],
+    liveUrl: 'https://willowy-cupcake-962a67.netlify.app',
+    githubUrl: 'https://github.com/aadityapatil350/10sportsbusiness',
+  },
+  {
+    title: 'Portfolio (Three.js)',
+    description: 'A portfolio website showcasing interactive 3D visuals and animations built with Three.js.',
+    technologies: ['Three.js', 'JavaScript', 'HTML', 'CSS'],
+    liveUrl: 'https://aditya-patil-x.netlify.app/', // Not hosted
+    githubUrl: 'https://github.com/aadityapatil350/portfolio-aditya-threejs',
+  },
+  {
+    title: '2D Game Character Controller',
+    description: 'A 2D game character controller developed in C# using the Unity engine, featuring smooth movement and animation mechanics.',
+    technologies: ['C#', 'Unity', '2D Animation'],
+    liveUrl: '', // Not hosted
+    githubUrl: 'https://github.com/aadityapatil350/portfolio-aditya-threejs',
+  }
 ];
 
 const containerVariants = {

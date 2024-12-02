@@ -50,17 +50,17 @@ export function Hero() {
               className="flex space-x-4"
             >
               <Button asChild>
-                <a href="mailto:your.email@example.com">
+                <a href="mailto:aadityapatil350@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Hire Me
                 </a>
               </Button>
-              <Button variant="outline" asChild>
+              {/* <Button variant="outline" asChild>
                 <a href="/resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
-              </Button>
+              </Button> */}
             </motion.div>
           </motion.div>
           <motion.div
@@ -69,8 +69,8 @@ export function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative aspect-square"
           >
-            <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+           <Image
+              src="/aditya.jpg" // Corrected path
               alt="Aditya Patil"
               fill
               className="object-cover rounded-full"
